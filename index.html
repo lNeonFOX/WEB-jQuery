@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Torekhan Taimas | jQuery Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-switch">
+      <button id="lightBtn" class="btn">Light</button>
+      <button id="darkBtn" class="btn">Dark</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="profile" class="panel hero">
+      <h2 class="section-title">Welcome to My Portfolio</h2>
+      <h1 id="name">Torekhan Taimas</h1>
+      <p id="headline" class="headline">Front-end developer in training</p>
+      <p class="intro">I am a student at AITU. This page is my jQuery practice project: selectors, effects, DOM manipulation and animations.</p>
+      <div class="row">
+        <button id="changeText" class="btn">Change headline (.text)</button>
+        <button id="changeHtml" class="btn">Change headline (.html)</button>
+        <button id="styleBtn" class="btn">Highlight name (.css)</button>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2 class="section-title">About Me</h2>
+      <p>I am 20 years old and study at AITU. I enjoy building small web projects and learning how a page reacts to user actions.</p>
+      <p id="status" class="status">Currently learning jQuery!</p>
+      <ul id="funFacts" class="facts">
+        <li>I am goal-oriented and punctual.</li>
+        <li>My goal is to become a professional web developer.</li>
+        <li>I like turning course assignments into portfolio projects.</li>
+      </ul>
+      <div class="row">
+        <button id="hideBtn" class="btn">Hide</button>
+        <button id="showBtn" class="btn">Show</button>
+        <button id="toggleBtn" class="btn">Toggle</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel">
+      <h2 class="section-title">Project Gallery</h2>
+      <div class="gallery">
+        <img class="gallery-img" src="image2.png" alt="Landing page project preview">
+        <img class="gallery-img" src="image1.png" alt="Code project preview">
+        <img class="gallery-img" src="image.png" alt="Data chart project preview">
+      </div>
+      <div class="row">
+        <button id="fadeInBtn" class="btn">Fade In</button>
+        <button id="fadeOutBtn" class="btn">Fade Out</button>
+        <button id="fadeToggleBtn" class="btn">Fade Toggle</button>
+      </div>
+    </section>
+
+    <section id="favorites" class="panel">
+      <h2 class="section-title">My Favorites</h2>
+      <div class="accordion">
+        <h3 class="accordion-head" tabindex="0">My Favorite Music</h3>
+        <div class="accordion-body"><p>Calm instrumental and lo-fi tracks that help me focus while coding.</p></div>
+
+        <h3 class="accordion-head" tabindex="0">My Favorite Movie</h3>
+        <div class="accordion-body"><p>Sci-fi films with strong ideas about technology and the future.</p></div>
+
+        <h3 class="accordion-head" tabindex="0">My Favorite Subject</h3>
+        <div class="accordion-body"><p>Web development, because the result is visible immediately in the browser.</p></div>
+      </div>
+      <div class="row">
+        <button id="slideDownBtn" class="btn">Slide Down All</button>
+        <button id="slideUpBtn" class="btn">Slide Up All</button>
+        <button id="slideToggleBtn" class="btn">Slide Toggle All</button>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <h2 class="section-title">Technical Skills</h2>
+      <ul id="skillList" class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+      <div class="row">
+        <input type="text" id="skillInput" placeholder="Enter a new skill" aria-label="New skill">
+        <button id="addSkill" class="btn">Add Skill</button>
+        <button id="prependSkill" class="btn">Prepend Skill</button>
+        <button id="removeSkill" class="btn">Remove Skill</button>
+      </div>
+      <p id="skillMsg" class="msg" role="status"></p>
+
+      <h3>Skill Levels</h3>
+      <div class="bars">
+        <div class="bar-row"><span>HTML</span><div class="bar-track"><div class="bar" data-level="90"></div></div></div>
+        <div class="bar-row"><span>CSS</span><div class="bar-track"><div class="bar" data-level="75"></div></div></div>
+        <div class="bar-row"><span>JavaScript</span><div class="bar-track"><div class="bar" data-level="60"></div></div></div>
+        <div class="bar-row"><span>jQuery</span><div class="bar-track"><div class="bar" data-level="45"></div></div></div>
+      </div>
+      <div class="row">
+        <button id="animateSkills" class="btn">Animate My Skills</button>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2 class="section-title">Contact</h2>
+      <p>Find me online: <a id="socialLink" href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+      <p class="msg">Current link: <span id="linkHref">https://github.com</span></p>
+      <div class="row">
+        <button id="changeLink" class="btn">Change Link</button>
+      </div>
+
+      <h3>Live Form</h3>
+      <div class="form">
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" placeholder="Your name">
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" placeholder="you@example.com">
+      </div>
+      <p class="live">Name: <strong id="liveName">-</strong></p>
+      <p class="live">Email: <strong id="liveEmail">-</strong></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">Assignment 6: jQuery (Selectors, Effects, Animations)</footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
